@@ -1,0 +1,15 @@
+<snippet>
+  <content><![CDATA[
+/**
+ * @param {${50:type}} ${20:param}
+ * @param {${60:type}} ${30:param}
+ * @param {${70:type}} ${40:param}
+ */
+${TM_FILEPATH/.+\/(.+)\/src\/(.+)\/(.*)\.js/$1.$2.$3/g/}.prototype.${10:name} = function (${20:param}, ${30:param}, ${40:param}) {
+  ${80:// body}
+};${0}
+]]></content>
+  <tabTrigger>f3</tabTrigger>
+  <scope>source.js</scope>
+  <description>function(arg1, arg2, arg3)</description>
+</snippet>

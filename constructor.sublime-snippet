@@ -1,0 +1,13 @@
+<snippet>
+  <content><![CDATA[
+/**
+ * @constructor
+ */
+${TM_FILEPATH/.+\/(.+)\/src\/(.+)\/(.*)\.js/$1.$2.$3/g/} = function () {
+  ${10:// body}
+};${0}
+]]></content>
+  <tabTrigger>c0</tabTrigger>
+  <scope>source.js</scope>
+  <description>constructor()</description>
+</snippet>
